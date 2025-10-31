@@ -204,16 +204,18 @@ h3 {
     text-shadow: #0e0731 1px 1px 2px;
 }
 
-.down-arrow {
+.down-arrow img {
     width: 60px;
     height: auto;
     display: block;
     margin: 20px auto;
-    animation-name: bounce;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation: bounce 2s ease-in-out infinite;
 }
+
+.down-arrow {
+    text-align: center;
+}
+
 
 p {
     font-size: var(--fs-md);
