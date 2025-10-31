@@ -355,21 +355,35 @@ header {
 .hero-text-container h2 {
     line-height: 1.2;
     color: #fff;
+    
 }
+
 
 .hero-text-container h1 {
     /* Space under h1 and above h2 */
     margin-bottom: 24px;
-    /* Set main heading to extra large size */
-    font-size: calc(var(--fs-xxxl) * 1.5);
+    /* Set main heading to extra large size 
+    font-size: calc(var(--fs-xxxl) * 1.5);*/
     /* When text extra large, decrease spacing between characters  */
     letter-spacing: -4px;
+}
+
+@media (max-width: 767px) {
+    .hero-text-container h1 {
+        font-size: calc(var(--fs-xxxl) * 1.1);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-text-container h1 {
+        font-size: calc(var(--fs-xxxl) * 1.5);
+    }
 }
 
 .hero-text-container h2 {
     /* Optionally, remove default weight of 'bold' from h2 */
     font-weight: normal;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xl * 0.8);
     /* Optionally, change text in h2 to all capital letters */
     text-transform: uppercase;
 }
@@ -378,6 +392,7 @@ header {
 
 .slide-in-top {
     animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
 }
 
 /* ----------------------------------------------
@@ -406,6 +421,7 @@ header {
 
 .slide-in-left {
     animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
 }
 
 /* ----------------------------------------------
@@ -453,3 +469,11 @@ header {
     border-radius: 70px
 }
 */
+
+main a { 
+    color: rgb(34, 18, 92); 
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}

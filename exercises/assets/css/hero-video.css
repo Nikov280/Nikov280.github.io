@@ -290,10 +290,22 @@ header {
 .hero-text-container h1 {
     /* Space under h1 and above h2 */
     margin-bottom: 24px;
-    /* Set main heading to extra large size */
-    font-size: calc(var(--fs-xxxl) * 1.5);
+    /* Set main heading to extra large size 
+    font-size: calc(var(--fs-xxxl) * 1.5);*/
     /* When text extra large, decrease spacing between characters  */
     letter-spacing: -4px;
+}
+
+@media (max-width: 767px) {
+    .hero-text-container h1 {
+        font-size: calc(var(--fs-xxxl) * 1.1);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-text-container h1 {
+        font-size: calc(var(--fs-xxxl) * 1.5);
+    }
 }
 
 .hero-text-container h2 {
@@ -388,7 +400,13 @@ header {
     background-image: linear-gradient(rgba(29,38,113,0.7),rgba(195,55,100,0.3));     
 }
 
-
+main a { 
+    color: rgb(34, 18, 92); 
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
 
 
 
