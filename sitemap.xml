@@ -1,52 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://nikov280.github.io/</loc>
+<lastmod>2025-11-25T11:44:29+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/portfolio/index.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/contact/index.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/portfolio/project-multi-column/index.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/portfolio/smoothies/index.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/portfolio/crypto-wallet/index.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/privacy.html</loc>
+<lastmod>2025-11-25T11:44:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://nikov280.github.io/index.html</loc>
+<lastmod>2025-11-25T11:44:29+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nikov280.github.io/exercises/assets/video/hero-video.html</loc>
+  <lastmod>2005-10-13T14:54:32+00:00</lastmod>
+  <priority>0.80</priority>
+  <video:video>
+    <video:thumbnail_loc>https://nikov280.github.io/exercises/assets/video/hero-still.jpg</video:thumbnail_loc>
 
+    <video:content_loc>https://nikov280.github.io/exercises/assets/video/hero-video.mp4</video:content_loc>
 
-<url>
-  <loc>https://nikov280.github.io/</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/page-1.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/page-2.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/page-3.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/page-4.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/page-5.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/exercises/hero-video.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://nikov280.github.io/index.html</loc>
-  <lastmod>2025-10-13T14:54:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+    <video:player_loc>https://nikov280.github.io/exercises/assets/video/hero-video.html</video:player_loc>
 
-
+    <video:title>Background Video</video:title>
+    <video:description>Descriptive video that plays automatically in the main (hero) section of the page.</video:description>
+    
+    <video:duration>30</video:duration> 
+    <video:live>No</video:live>
+  </video:video>
+</url>
 </urlset>
