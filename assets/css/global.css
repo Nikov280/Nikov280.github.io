@@ -349,3 +349,8 @@ a {
         opacity: 1;
     }
 }
+
+.brand  {
+    width: 1px;
+    height: 10px;
+}
