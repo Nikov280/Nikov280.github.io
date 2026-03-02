@@ -33,22 +33,19 @@ async function fetchUsersData() {
     }
 }
 
-async function fetchRMData(name = "") {
-    const url = name 
-        ? `https://rickandmortyapi.com/api/character/?name=${encodeURIComponent(name)}`
-        : "https://rickandmortyapi.com/api/character";
-
+async function fetchRMData() {
     try {
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        if (data.results) {
-            displayRMData(data.results);
-        } else {
-            document.getElementById("remote-data-container").innerHTML = '<p class="no-results">No characters found matching that name.</p>';
+        const response = await fetch("https://rickandmortyapi.com/api/character");
+        if (!response.ok) {
+            console.log(`Network response was not ok - Status: ${response.status}`);
+            return;
         }
+        const data = await response.json();
+        displayRMData(data.results);
     } catch (error) {
-        showError(error);
+        const container = document.getElementById("remote-data-container");
+        container.innerHTML = '<p class="error">⚠️ Failed to load data. Please try again later.</p>';
+        console.error(`Error fetching data: ${error}`);
     }
 }
 
@@ -94,7 +91,6 @@ function displayUsersData(usersArray) {
 }
 
 function displayRMData(charactersArray) {
-    console.log("displaying data");
     const container = document.getElementById("remote-data-container");
     let htmlOutput = "";
 
@@ -112,7 +108,7 @@ function displayRMData(charactersArray) {
     });
     container.innerHTML = htmlOutput;
 }
-
+    
 
 
 // Event listener on the parent container
@@ -121,40 +117,7 @@ document.getElementById("button-container").addEventListener("click", function (
         fetchCountriesData();
     } else if (e.target.id === "btn-users") {
         fetchUsersData();
-    } else if (e.target.id === "btn-characters") {
+    }else if (e.target.id === "btn-characters") {
         fetchRMData();
     }
-});
-
-function showError(msg) {
-    document.getElementById("remote-data-container").innerHTML = `<p class="error">⚠️ Error: ${msg}</p>`;
-}
-
-// --- EVENT LISTENERS ---
-
-document.getElementById("button-container").addEventListener("click", (e) => {
-    const filterSection = document.getElementById("filter-rm");
-    const container = document.getElementById("remote-data-container");
-    
-    // Clear previous results
-    container.innerHTML = "";
-
-    if (e.target.id === "btn-countries") {
-        filterSection.style.display = "none";
-        fetchCountriesData();
-    } 
-    else if (e.target.id === "btn-users") {
-        filterSection.style.display = "none";
-        fetchUsersData();
-    } 
-    else if (e.target.id === "btn-characters") {
-        filterSection.style.display = "block";
-        document.getElementById("characterSearch").value = "";
-        fetchRMData();
-    }
-});
-
-// Search input logic
-document.getElementById("characterSearch").addEventListener("input", (e) => {
-    fetchRMData(e.target.value.trim());
-});
+}); 
